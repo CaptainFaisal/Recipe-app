@@ -1,0 +1,57 @@
+.card {
+  box-shadow: 0 5px 20px rgb(0, 0, 0);
+  border-radius: 20px;
+}
+.card-body {
+  border-radius: 20px;
+}
+.card-img-top {
+  border-radius: 20px 20px 0 0;
+}
+#card::-webkit-scrollbar {
+  display: block;
+  width: 5px;
+}
+#card::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#card::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-right: none;
+  border-left: none;
+}
+
+#card::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 20px;
+}
+
+#card::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+}
+#root {
+  background-image: url("../img/background.jpg");
+
+  background-size: contain;
+}
+#loader {
+  display: flex;
+  align-items: center;
+}
+
+#loading {
+  background-color: #343a40;
+  height: calc(1.5em + 0.75rem + 2px);
+  width: calc(1.5em + 0.75rem + 2px);
+  background-image: url('data:image/svg+xml,\
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 40 40">\
+<style> /* ...YO DAWG... */ circle { animation: 4s a infinite linear, 3s o infinite linear; }\
+@keyframes a {from{stroke-dasharray:100 0}50%25{stroke-dasharray:0 100}to{stroke-dasharray:100 0}}\
+@keyframes o {from{stroke-dashoffset:75}to{stroke-dashoffset:375}}\
+<%2Fstyle><circle r="15.9154943092" stroke-width="7" fill="none" stroke="snow" />\
+</svg>');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: calc(1.5em + 0.75rem + 2px);
+}
