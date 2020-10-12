@@ -41,6 +41,7 @@ const NavBar = () => {
               label={recipe["label"]}
               imageUrl={recipe["image"]}
               ingredients={recipe["ingredientLines"]}
+              calories={recipe["calories"]}
             />
           ))}
         </div>
