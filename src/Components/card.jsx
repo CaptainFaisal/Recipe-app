@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({ label, imageUrl, ingredients }) => {
+const Card = ({ label, imageUrl, ingredients, calories }) => {
   return (
     <div className="col" style={{ minWidth: "inherit", margin: "20px 0" }}>
       <div className="card" style={{ width: "18rem" }}>
@@ -11,6 +11,7 @@ const Card = ({ label, imageUrl, ingredients }) => {
           id="card"
         >
           <h5 className="card-title">{label}</h5>
+          <h6>{parseInt(calories)}</h6>
           <p className="card-text">
             <ol>
               {ingredients.map((ingredient, idx) => (
