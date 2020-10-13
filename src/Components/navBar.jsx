@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "./card";
+import RangeSlider from "./RangeSlider";
 import Search from "./searchBox";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.css";
@@ -34,6 +35,7 @@ const NavBar = () => {
         </div>
       </nav>
       <div className="container">
+        <RangeSlider />
         <div className="row">
           {recepies.map((recipe, idx) => (
             <Card
